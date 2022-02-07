@@ -1,0 +1,10 @@
+---
+- name: Ping server
+  hosts: all
+  tasks:
+    - name: Ping
+      ping:
+      register: ping_output
+    - name: print output
+      debug:
+        msg: ping_output
