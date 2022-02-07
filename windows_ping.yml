@@ -8,4 +8,4 @@
       
     - name: print output
       debug:
-        msg: '{{ ansible_host }} {{ ansible_connection }} {{ ansible_os }} {{ ansible_distribution }}'
+        msg: '{{ ansible_hostname }} - {{ ansible_host }} | {{ ansible_connection }} | {{ ansible_os }} | {{ ansible_distribution }}'
