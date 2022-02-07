@@ -1,1 +1,2 @@
-print('Hello! Python Worked')
+print_msg = 'Hello! Python Worked'
+print(print_msg)
