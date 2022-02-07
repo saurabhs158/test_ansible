@@ -5,3 +5,7 @@
   tasks:
     - name: Windows ping check
       win_ping:
+      
+    - name: print output
+      debug:
+        msg: '{{ ansible_host }}{{ ansible_connection }}{{ host }}'
