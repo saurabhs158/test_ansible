@@ -1,5 +1,5 @@
 - name: Windows Ping
-  hosts: all
+  hosts: win
   gather_facts: yes
   ignore_errors: yes
   tasks:
