@@ -8,3 +8,9 @@
     - name: print output
       debug:
         msg: '{{ ping_output }}'
+    - name: Run python file
+      script: test.py
+      register: test_result
+    - name: print output
+      debug:
+        msg: '{{ test_result }}'
