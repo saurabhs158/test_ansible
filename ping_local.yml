@@ -9,7 +9,7 @@
       debug:
         msg: '{{ ping_output }}'
     - name: Run python file
-      script: python/test.py
+      command: python3 python/test.py
       register: test_result
     - name: print output
       debug:
