@@ -1,0 +1,7 @@
+- name: Windows Ping
+  hosts: all
+  gather_facts: yes
+  ignore_errors: yes
+  tasks:
+    - name: Windows ping check
+      win_ping:
